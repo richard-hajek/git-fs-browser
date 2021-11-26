@@ -68,7 +68,7 @@ def find(obj, prefix=""):
         print(f"{prefix}/{obj}")
 
 def is_git():
-    return ".git" in os.listdir(".")
+    return ".git" in os.listdir("../..")
 
 
 def main():
@@ -85,7 +85,7 @@ def main():
             continue
 
         if cmd[0] == "ls":
-            print(os.listdir("."))
+            print(os.listdir("../.."))
             continue
 
         if cmd[0] == "pwd":
